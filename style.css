@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cdcfe8;
+    color: white;
+}
+.mobie-frem{
+    width: 303px;
+    height: 620px;
+    background: white;
+    border-radius: 46px;
+    overflow: hidden;
+}
+.mobie-frem .frem-f{
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    position: relative;
+}
+.mobie-frem .frem-f .top-cant{
+    width: 100%;
+    height: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-bottom-right-radius: 94px;
+    position: relative;
+    z-index: 1;
+}
+.mobie-frem .frem-f .top-cant img{
+    width: 286px;
+    height: 267px;
+    position: relative;
+    top: 0;
+    animation: animatupdo 2s infinite ease-in-out;
+}
+.mobie-frem .frem-f .bottom-cant{
+    width: 100%;
+    height: 100%;
+    background: #181d3d;
+    position: relative;
+    border-top-left-radius: 94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mobie-frem .frem-f .bottom-cant::before{
+    content: '';
+    width: 9rem;
+    height: 7rem;
+    position: absolute;
+    background: #181d3d;
+    top: -96px;
+    right: 0;
+}
+
+.mobie-frem .frem-f .bottom-cant h2{
+    position: absolute;
+    top: 3rem;
+    text-align: center;
+    font-family: cursive;
+}
+
+.mobie-frem .frem-f .bottom-cant p{
+    position: absolute;
+    top: 8rem;
+    text-align: center;
+    font-size: 18px;
+    font-family: system-ui;
+}
+
+.mobie-frem .frem-f .bottom-cant button{
+    border: none;
+    position: absolute;
+    top: 12rem;
+    padding: 12px;
+    border-radius: 16px;
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #fc4f69;
+    color: white;
+    box-shadow: 9px 9px 20px #0000004f;
+}
+.mobie-frem .frem-f .bottom-cant button:focus{
+    background: #ff3d79;
+}
+@keyframes animatupdo {
+    0%, 100%{
+        top: -5px;
+    }
+    50%{
+        top: 10px;
+    }
+}
